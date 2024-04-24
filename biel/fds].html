@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- 
+Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o meu grande irmão</title>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h2> Vlw por tudo irmão de outra mãe</h2>
+        <div style="margin: auto;width: 170px;">
+            <ul>
+            <button style="position: fixed;display: block;" class="btn" onclick="sim()">VEJA AQUI!</button>
+            </ul>
+            <img src="./img/ac701c79b6d475be09c751c781854e02b302cbb1_00.gif" img>
+        </div>
+    </div>
+</body>
+<style> 
+@font-face {
+    font-family: "biel";
+    src: url(./fontes/Jacquard12Charted-Regular.ttf);
+    
+}
+      h2 {
+        font-family: "biel", ;
+      }
+      body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, black, white);
+      }
+      ul {
+        width: 70px;
+        height: 70px;
+      }
+        
+    #conteudo {
+        background: linear-gradient(to bottom,black, white);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 60px;
+        border-radius: 5px;
+        background-position: center;
+    }
+
+    img {
+        border-style: dashed;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+</style>
+
+<script>
+    function sim() {
+        alert("SUAAAA VADIAAAAA :)");
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://www.tiktok.com/@aquela_cenaa/video/7246498245701160197?is_from_webapp=1&sender_device=pc&web_id=7291370771274941958";
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+</script>
+
+</html>
